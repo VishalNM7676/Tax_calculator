@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapperContent">
+        <div class="hamberger">
+            <i class="ri-menu-2-line"></i>
+        </div>
+        <div class="extractedHamberger">
+            <div class="wrapper">
+                <div class="btnWrapper">
+                    <button class="deleteBtn">Delete All</button>
+                    <div class="closeButton"><i class="ri-close-line"></i></div>
+
+                </div>
+                <div class="historyTable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Count</th>
+                                <th>Amount</th>
+                                <th>Percentage</th>
+                                <th>Result</th>
+                                <th>Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="historyContent"></tbody>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="container">
+            <h4>Tax Calculator</h4>
+            <div class="inputWrapper">
+                <div class="amountWrapper">
+                    <label for="">Add Amount (rs)</label>
+                    <input class="amount" type="number" placeholder="add your amount here...">
+                </div>
+                <div class="amountWrapper">
+                    <label for="">Add Percentage (%)</label>
+                    <input class="percentage" type="number" placeholder="add your percentage here...">
+                </div>
+            </div>
+            <div class="bottomWrapper">
+                <button class="btnCalc">Calculate</button>
+
+                <div class="resultWrapper">
+                    <p class="result">Result: 0.00 /-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
